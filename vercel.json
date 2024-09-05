@@ -1,0 +1,6 @@
+{
+    "rewrites": [
+      { "source": "/(.*)", "destination": "/panduan-penugasan-masayu24.html" }
+    ]
+  }
+  
