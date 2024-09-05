@@ -370,3 +370,58 @@ footer {
     margin: 0 10px;
   }
 }
+
+
+/* CSS untuk tombol */
+.semua-penugasan{
+  text-align: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 0;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.205);
+}
+.semua-penugasan p{
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.btn-akses-drive {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-akses-drive:hover {
+  background-color: #45a049;
+}
+
+/* CSS Responsif */
+@media  (max-width: 767px) {
+  .btn-akses-drive {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+}
+
+@media (max-width: 440px) {
+  .btn-akses-drive {
+      font-size: 12px;
+      padding: 6px 12px;
+  }
+
+  .semua-penugasan p {
+      font-size: 18px;
+      padding: 0 20px;
+  }
+  .btn-akses-drive{
+    padding: 10px 10px ;
+    font-size: 16px;
+  }
+}
