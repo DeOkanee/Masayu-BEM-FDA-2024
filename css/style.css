@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+}
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 888;
+}
+
+.logo-left img,
+.logo-right img {
+  width: 50px;
+  height: auto;
+  margin: 4px 5px;
+}
+
+.title {
+  font-size: 12px;
+  text-align: center;
+  flex-grow: 1;
+  font-family: "Font1", sans-serif;
+}
+
+.guide-section {
+  margin-top: 100px;
+  margin-bottom: 80px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.205);
+}
+
+.guide-section h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.guide-section p {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 20px;
+  padding: 0 20px;
+}
+.video-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.video-container h3 {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.video-container video {
+  width: 60%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.buttons p {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.btn {
+  margin: 0 auto;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  width: 30%;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+.guide-section h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+.nametag-demo {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-mind-maping {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.video-mind-maping h3 {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.video-mind-maping video {
+  width: 60%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+footer {
+  background-color: #525252;
+  color: #fff;
+  padding: 20px 0;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.bawah {
+  width: 100%;
+  max-width: 1200px; /* Optional: jika Anda ingin batasi lebar maksimum */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left p {
+  margin: 0;
+}
+.footer-left p a {
+  text-decoration: none;
+  color: rgb(59, 193, 255);
+}
+.footer-left p a:hover {
+  color: white;
+}
+.footer-right nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.footer-right nav ul li {
+  margin-right: 20px;
+}
+
+.footer-right nav ul li:last-child {
+  margin-right: 0;
+}
+
+.footer-right nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-right nav ul li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  .logo-left img,
+  .logo-right img {
+    width: 40px;
+  }
+
+  .title {
+    font-size: 10px;
+  }
+  .guide-section {
+    margin-top: 70px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .guide-section h1 {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  .guide-section p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+    padding: 0 10px;
+  }
+  .video-container h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+  }
+
+  .video-container video {
+    width: 80%;
+  }
+  .buttons {
+    gap: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .buttons p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .btn {
+    margin: 0 auto;
+    padding: 10px 10px;
+    width: 60%;
+  }
+  .guide-section h2 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  .nametag-demo {
+    display: block;
+    width: 90%;
+    max-width: 500px;
+
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.219);
+  }
+
+  .video-mind-maping h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+  }
+
+  .video-mind-maping video {
+    width: 90%;
+  }
+
+  footer {
+    bottom: 0;
+    padding: 10px 0; /* Ubah padding agar lebih ramping */
+  }
+  .bawah {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .footer-left,
+  .footer-right {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .footer-right nav ul {
+    justify-content: center;
+  }
+  .footer-right nav ul li {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 440px) {
+  .logo-left img,
+  .logo-right img {
+    width: 40px;
+  }
+
+  .title {
+    font-size: 10px;
+  }
+
+  .guide-section {
+    margin-top: 70px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .guide-section h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  .guide-section p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+    padding: 0 10px;
+  }
+  .video-container h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+  }
+
+  .video-container video {
+    width: 80%;
+  }
+  .buttons {
+    gap: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .buttons p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .btn {
+    margin: 0 auto;
+    padding: 10px 10px;
+    width: 60%;
+  }
+  .guide-section h2 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  .nametag-demo {
+    display: block;
+    width: 90%;
+    max-width: 500px;
+
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.219);
+  }
+
+  .video-mind-maping h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+  }
+
+  .video-mind-maping video {
+    width: 90%;
+  }
+
+  footer {
+    padding: 10px 0; /* Ubah padding agar lebih ramping */
+  }
+  .bawah {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .footer-left,
+  .footer-right {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .footer-right nav ul {
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-right nav ul li {
+    margin: 0 10px;
+  }
+}
