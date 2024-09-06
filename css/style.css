@@ -117,6 +117,10 @@ header {
   .penugasan-list ul li a {
       font-size: 14px;
   }
+  #Alternatif{
+    display: flex;
+    flex-direction: column;
+  }
 }
 .guide-section {
   margin-top: 100px;
