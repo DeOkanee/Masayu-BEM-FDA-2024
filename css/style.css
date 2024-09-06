@@ -34,7 +34,78 @@ header {
   flex-grow: 1;
   font-family: "Font1", sans-serif;
 }
+.penugasan-list {
+  padding: 10px;
 
+ align-items: center;
+
+  margin-bottom: 40px;
+}
+
+.penugasan-list h2 {
+  font-size: 22px;
+  margin-top: 0;
+}
+
+.penugasan-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.penugasan-list ul li{
+  margin: 3px 0;
+  cursor: pointer;
+}
+
+.penugasan-list ul li a {
+  background-color: #e0e0e0; /* Highlight background saat hover */
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: block; /* Pastikan link mengisi seluruh area item */
+  padding: 10px;
+  padding-left: 10px;
+}
+
+.penugasan-list ul li a:hover {
+  color: #292929;
+  background-color: #a3eaff; /* Highlight background saat hover */
+}
+
+/* Responsive for 767px */
+@media (max-width: 767px) {
+  .penugasan-list {
+      width: 100%;
+      height: auto; /* Biarkan tinggi sidebar otomatis */
+  }
+}
+
+/* Responsive for 440px */
+@media (max-width: 440px) {
+  .drive-panduan{
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .drive-panduan a{
+    margin:7px 0;
+  }
+  .penugasan-list h2 {
+      font-size: 18px;
+  }
+  .penugasan-list ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .penugasan-list ul li a {
+      font-size: 14px;
+  }
+}
 .guide-section {
   margin-top: 100px;
   margin-bottom: 80px;

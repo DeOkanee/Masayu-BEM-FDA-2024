@@ -40,15 +40,38 @@
         />
       </div>
     </header>
+    
     <section class="guide-section">
       <h1>Panduan dan Contoh Penugasan Masayu 2024</h1>
-      <p>
-        Untuk berpartisipasi dalam acara Masayu 2024,<br />
-        silakan ikuti panduan berikut untuk membuat Twibbon:
-      </p>
+      <section class="semua-penugasan"> 
+        <div>
+            <p>Semua Panduan Dan Penugasan Masayu 2024 bisa di Akses di Drive Bawah ini</p>
+            <div  class="drive-panduan">
+              <a href="https://drive.google.com/drive/folders/1ndf8FP7ivy1w81eOhtBoBW8__w53zoQR?usp=drive_link" target="_blank">
+                <button class="btn-akses-drive">Google Drive</button>
+            </a>
+            <a href="doc/PANDUAN MASAYU TAHUN 2024.pdf" download >
+              <button class="btn-akses-drive">Panduan Penugasan PDF</button>
+          </a>
+            </div>
+          
+        </div>
+    </section>
+   
+    <nav class="penugasan-list">
+      <h2>Penugasan Masayu 2024</h2>
+      <ul>
+          <li><a href="#twibbon">- Membuat Twibbon</a></li>
+          <li><a href="#nametag">- Membuat Nametag</a></li>
+          <li><a href="#perkenalan"> - Video Perkenalan</a></li>
+          <li><a href="#mind-mapping">- Video Mind Mapping</a></li>
+          <li><a href="#jingle-fda">- Video Jingle FDA</a></li>
+      </ul>
+  </nav>
+      <h1>Membuat Twibbon</h1>
 
       <!-- Video demo Twibbon -->
-      <div class="video-container">
+      <div id="twibbon" class="video-container" >
         <h3>Contoh Twibbon</h3>
         <video controls>
           <source
@@ -71,7 +94,7 @@
       </div>
       <hr />
       <!-- Gambar demo nametag -->
-      <h2>Nametag Masayu 2024</h2>
+      <h2 id="nametag">Nametag Masayu 2024</h2>
       <img
         src="img-video/Name Tag Masayu FDA.jpg"
         alt="Demo Nametag"
@@ -84,14 +107,14 @@
         >
       </div>
       <hr />
-      <div class="video-mind-maping">
+      <div id="perkenalan" class="video-mind-maping">
         <h3>Contoh Video Perkenalan</h3>
         <video controls>
           <source src="img-video/VIDEO PERKENALAN.mp4" type="video/mp4" />
           Browser Anda tidak mendukung video tag.
         </video>
       </div>
-      <div class="video-mind-maping">
+      <div id="mind-mapping" class="video-mind-maping">
         <h3>Contoh Penugasan Mind Maping</h3>
         <video controls>
           <source
@@ -101,12 +124,12 @@
           Browser Anda tidak mendukung video tag.
         </video>
       </div>
-      <div class="video-jingle">
+      <div id="jingle-fda" class="video-jingle">
         <h3>Penugasan Jingle FDA</h3>
        
           <iframe src="https://drive.google.com/file/d/16bE4Na2aCmaJu7jhHSwjg1AgwAZZfsxa/preview"  allow="autoplay"></iframe>
          <div>
-          <a class="btn-alternatif" style="font-size: 18px; color: blue;" href="https://drive.google.com/file/d/16bE4Na2aCmaJu7jhHSwjg1AgwAZZfsxa/view?usp=drive_link" >Alternatif Video Jingle</a>
+          <a class="btn-alternatif" style="font-size: 18px; color: blue;" href="https://drive.google.com/file/d/16bE4Na2aCmaJu7jhHSwjg1AgwAZZfsxa/view?usp=drive_link" >Alternatif Video Jingle FDA</a>
          </div>
           <div>
             <p>Download Musik Jingle FDA Dibawah</p>
@@ -116,14 +139,7 @@
         </div>
       </div>
     </section>
-    <section class="semua-penugasan"> 
-        <div>
-            <p>Semua Panduan Dan Penugasan Masayu 2024 bisa di Akses di Drive Bawah ini</p>
-            <a href="https://drive.google.com/drive/folders/1ndf8FP7ivy1w81eOhtBoBW8__w53zoQR?usp=drive_link" target="_blank">
-                <button class="btn-akses-drive">Google Drive</button>
-            </a>
-        </div>
-    </section>
+   
     <section class="contact" id="contact-panitia">
       <div class="contact-area">
         <!-- Kotak Kontak Pertama -->
@@ -215,6 +231,20 @@
         </div>
       </div>
     </footer>
+    <script>
+      // Smooth scroll to section when link is clicked
+document.querySelectorAll('.penugasan-list a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href');
+        document.querySelector(targetId).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+    </script>
     <script src="js/contact.js"></script>
   </body>
 </html>
