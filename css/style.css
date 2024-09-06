@@ -78,9 +78,21 @@ header {
 
 /* Responsive for 767px */
 @media (max-width: 767px) {
+  .drive-panduan{
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .drive-panduan a{
+    margin:7px 0;
+  }
   .penugasan-list {
       width: 100%;
       height: auto; /* Biarkan tinggi sidebar otomatis */
+  }
+  .penugasan-list ul {
+    display: flex;
+    flex-direction: column;
   }
 }
 
