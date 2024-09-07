@@ -1,0 +1,145 @@
+/* Responsive for 767px */
+@media (max-width: 767px) {
+    .logo-left img,
+    .logo-right img {
+      width: 40px;
+    }
+  
+    .title {
+      font-size: 10px;
+    }
+    .btn-akses-drive {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    .drive-panduan{
+      display: flex;
+      flex-direction: column;
+    
+    }
+    .drive-panduan a{
+      margin:7px 0;
+    }
+    .penugasan-list {
+        width: 100%;
+        height: auto; /* Biarkan tinggi sidebar otomatis */
+    }
+    .penugasan-list ul {
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .guide-section {
+      margin-top: 70px;
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+  
+    .guide-section h1 {
+      margin-top: 20px;
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+    .guide-section p {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 18px;
+      padding: 0 10px;
+    }
+    .video-container h3 {
+      font-size: 19px;
+      margin-bottom: 10px;
+    }
+  
+    .video-container video {
+      width: 80%;
+    }
+    .buttons {
+      gap: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .buttons p {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+    .btn {
+      margin: 0 auto;
+      padding: 10px 10px;
+      width: 60%;
+    }
+    .guide-section h2 {
+      font-size: 22px;
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: 30px;
+    }
+    .nametag-demo {
+      display: block;
+      width: 90%;
+      max-width: 500px;
+  
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.219);
+    }
+  
+    .video-mind-maping h3 {
+      font-size: 19px;
+      margin-bottom: 10px;
+    }
+  
+    .video-mind-maping video {
+      width: 90%;
+    }
+    .video-jingle iframe{
+      width: 350px;
+      height: 200px;
+    
+    }
+  
+    footer {
+      bottom: 0;
+      padding: 10px 0; /* Ubah padding agar lebih ramping */
+    }
+    .bawah {
+      flex-direction: column;
+      text-align: center;
+      margin-top: 10px;
+    }
+    .footer-left,
+    .footer-right {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    .footer-right nav ul {
+      justify-content: center;
+    }
+    .footer-right nav ul li {
+      margin: 0 10px;
+    }
+  }
+
+  @media (max-width: 1000px){
+    footer {
+        bottom: 0;
+        padding: 10px 0; /* Ubah padding agar lebih ramping */
+      }
+      .bawah {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10px;
+      }
+      .footer-left,
+      .footer-right {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      .footer-right nav ul {
+        justify-content: center;
+      }
+      .footer-right nav ul li {
+        margin: 0 10px;
+      }
+  }
